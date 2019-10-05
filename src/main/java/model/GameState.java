@@ -45,4 +45,8 @@ public class GameState {
     public void setDiscardedCards(List<Card> discardedCards) {
         this.discardedCards = discardedCards;
     }
+
+    public int getTurn() {
+        return turn;
+    }
 }
