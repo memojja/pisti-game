@@ -38,6 +38,10 @@ public class GameState {
         this.playersCards = playersCards;
     }
 
+    public void incrementTurn(){
+        turn = turn == 3 ? 0 : ++turn;
+    }
+
     public List<Card> getDiscardedCards() {
         return discardedCards;
     }
@@ -48,5 +52,9 @@ public class GameState {
 
     public int getTurn() {
         return turn;
+    }
+
+    public boolean isFinished() {
+        return false;
     }
 }

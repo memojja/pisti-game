@@ -23,7 +23,7 @@ public class RuleTest {
         c2.setNext(c3);
         c3.setNext(c4);
 
-        Player player = new Player();
+        Player player = new Player(1);
         c1.process(new Card(Suit.CLUB,Value.TWO),player);
 
         Assert.assertEquals(player.getPoint(),2);

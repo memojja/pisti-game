@@ -11,13 +11,16 @@ public class Player {
     private int index;
     private int point;
 
-    public Player(){
+    public Player(int index){
+        this.index = index;
+        this.point = 0;
     }
 
 
     public void play(GameState gameState) {
 
     }
+
 
     public void addPoint(int point){
         this.point+=point;
