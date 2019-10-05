@@ -2,9 +2,7 @@ package rule.end;
 
 import model.Card;
 import rule.PointChain;
-import simulation.Player;
-
-import java.util.List;
+import model.Player;
 
 //TODO majority cards 3 points
 

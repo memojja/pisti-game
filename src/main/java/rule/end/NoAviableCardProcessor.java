@@ -2,9 +2,7 @@ package rule.end;
 
 import model.Card;
 import rule.PointChain;
-import simulation.Player;
-
-import java.util.List;
+import model.Player;
 
 // TODO give all of them last player
 public class NoAviableCardProcessor implements PointChain {

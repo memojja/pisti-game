@@ -55,6 +55,6 @@ public class GameState {
     }
 
     public boolean isFinished() {
-        return false;
+        return !deck.hasNext();
     }
 }

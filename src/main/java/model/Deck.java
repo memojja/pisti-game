@@ -1,5 +1,7 @@
 package model;
 
+import util.GenericCardUtil;
+
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -10,7 +12,6 @@ import java.util.List;
  */
 public class Deck implements Iterator<Card> {
 
-    private final int TOTAL_CARD = 52;
 
     private int iteratorPosition = 0;
 
@@ -24,7 +25,7 @@ public class Deck implements Iterator<Card> {
     }
 
     public boolean hasNext() {
-        return iteratorPosition < TOTAL_CARD;
+        return iteratorPosition < GenericCardUtil.TOTAL_CARD;
     }
 
     public Card next() {

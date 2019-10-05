@@ -2,7 +2,7 @@ package rule.end;
 
 import model.Card;
 import rule.PointChain;
-import simulation.Player;
+import model.Player;
 
 public class PistiProcessor implements PointChain {
 

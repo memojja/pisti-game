@@ -1,9 +1,7 @@
 package rule;
 
 import model.Card;
-import simulation.Player;
-
-import java.util.List;
+import model.Player;
 
 public interface PointChain {
     public void setNext(PointChain next);

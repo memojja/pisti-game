@@ -9,7 +9,7 @@ import rule.continously.AceProcessor;
 import rule.continously.ClubTwoProcessor;
 import rule.continously.DiamondTenProcessor;
 import rule.continously.NoneProcessor;
-import simulation.Player;
+import model.Player;
 
 public class RuleTest {
 

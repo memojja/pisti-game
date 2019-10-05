@@ -1,4 +1,4 @@
-package simulation;
+package model;
 
 import model.Card;
 import model.GameState;
@@ -6,7 +6,7 @@ import model.GameState;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player {
+public abstract class Player implements LogicTemplate {
 
     private int index;
     private int point;
@@ -18,9 +18,14 @@ public class Player {
 
 
     public void play(GameState gameState) {
+        List<Card> myCards = gameState.getPlayersCards().get(index);
+
+        Card card = logic();
+
+        gameState.getDiscardedCards().add(card);
+        myCards.remove(card);
 
     }
-
 
     public void addPoint(int point){
         this.point+=point;

@@ -2,7 +2,7 @@ package rule.continously;
 
 import model.Card;
 import rule.PointChain;
-import simulation.Player;
+import model.Player;
 
 public class NoneProcessor implements PointChain {
     @Override

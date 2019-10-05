@@ -4,7 +4,7 @@ import model.Card;
 import model.Suit;
 import model.Value;
 import rule.PointChain;
-import simulation.Player;
+import model.Player;
 
 public class ClubTwoProcessor implements PointChain {
 

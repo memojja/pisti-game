@@ -4,9 +4,7 @@ import model.Card;
 import model.Suit;
 import model.Value;
 import rule.PointChain;
-import simulation.Player;
-
-import java.util.List;
+import model.Player;
 
 // TODO 3 point
 public class DiamondTenProcessor implements PointChain {

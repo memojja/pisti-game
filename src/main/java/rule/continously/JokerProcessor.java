@@ -3,7 +3,7 @@ package rule.continously;
 import model.Card;
 import model.Value;
 import rule.PointChain;
-import simulation.Player;
+import model.Player;
 
 public class JokerProcessor implements PointChain {
 
