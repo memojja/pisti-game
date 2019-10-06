@@ -1,11 +1,12 @@
-package rule.continously;
+package rule;
 
 import model.Card;
 import model.Value;
-import rule.PointChain;
+import org.apache.log4j.Logger;
 import model.Player;
 
-public class AceProcessor implements PointChain {
+public class JokerProcessor implements PointChain {
+    private final static Logger logger = Logger.getLogger(String.valueOf(JokerProcessor.class));
 
     private PointChain nextInChain;
 
@@ -16,8 +17,9 @@ public class AceProcessor implements PointChain {
 
     @Override
     public void process(Card card, Player player) {
-        if(card.getNumber().equals(Value.ACE)){
+        if (card.getNumber().equals(Value.JACK)){
             player.addPoint(1);
+            logger.debug(player.getGameName() + " Player-" + player.getIndex() + " get one point.");
         }else{
             nextInChain.process(card,player);
         }

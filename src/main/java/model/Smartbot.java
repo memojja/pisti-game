@@ -1,8 +1,8 @@
 package model;
 
 public class Smartbot extends Player {
-    public Smartbot(int index) {
-        super(index);
+    public Smartbot(int index,String gameName) {
+        super(index,gameName);
     }
 
     @Override

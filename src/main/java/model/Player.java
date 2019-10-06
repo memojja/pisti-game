@@ -1,8 +1,7 @@
 package model;
 
-import rule.PointChain;
 import service.GameService;
-import util.GenericCardUtil;
+
 import java.util.List;
 
 /**
@@ -14,12 +13,14 @@ public abstract class Player implements BrainTemplate {
     private int index;
     private int point;
     private int sizeCollectedCard;
+    private String gameName;
     private GameService gameService;
 
-    public Player(int index){
+    public Player(int index,String gameName){
         this.index = index;
         this.point = 0;
         gameService = new GameService();
+        this.gameName = gameName;
     }
 
     public void play(GameState gameState) {
@@ -27,14 +28,10 @@ public abstract class Player implements BrainTemplate {
         List<Card> discardedCards = gameState.getDiscardedCards();
 
         Card card = logic(gameState);
+
         discardCard(myCards, discardedCards, card);
 
         gameService.calculateUserPoint(gameState,discardedCards,this,false);
-    }
-
-    private void discardCard(List<Card> myCards, List<Card> discardedCards, Card card) {
-        discardedCards.add(new CardWithFacingUp(card));
-        myCards.remove(card);
     }
 
     public void addPoint(int point){
@@ -64,4 +61,14 @@ public abstract class Player implements BrainTemplate {
     public void setSizeCollectedCard(int sizeCollectedCard) {
         this.sizeCollectedCard = sizeCollectedCard;
     }
+
+    public String getGameName() {
+        return gameName;
+    }
+
+    private void discardCard(List<Card> myCards, List<Card> discardedCards, Card card) {
+        discardedCards.add(new CardWithFacingUp(card));
+        myCards.remove(card);
+    }
+
 }

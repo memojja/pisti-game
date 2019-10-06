@@ -1,12 +1,10 @@
-import simulation.GameImpl;
+import simulation.Game;
 
 public class Main {
     public static void main(String[] args) {
-        GameImpl game = new GameImpl();
-        GameImpl game2 = new GameImpl();
-        GameImpl game3 = new GameImpl();
+        Game game = new Game();
+        Game game2 = new Game();
+        Game game3 = new Game();
         new Thread(game).start();
-        new Thread(game2).start();
-        new Thread(game3).start();
     }
 }

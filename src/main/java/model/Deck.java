@@ -15,7 +15,7 @@ public class Deck implements Iterator<Card> {
 
     private int iteratorPosition = 0;
 
-    // all games can be use same deck
+    // all games can be use same deck to reduce memory allocation
     private static List<Card> cards;
 
     public Deck(){

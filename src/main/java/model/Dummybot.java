@@ -1,31 +1,37 @@
 package model;
 
+import org.apache.log4j.Logger;
+
 import java.util.List;
 
 public class Dummybot extends Player {
-    public Dummybot(int index) {
-        super(index);
+
+    private final static Logger logger = Logger.getLogger(String.valueOf(Dummybot.class));
+
+    public Dummybot(int index,String gameName) {
+        super(index,gameName);
     }
 
     @Override
     public Card logic(GameState gameState) {
         List<Card> discardedCards = gameState.getDiscardedCards();
         List<Card> myCards = gameState.getPlayersCards().get(getIndex());
-        int jokerIndex = 99;
+        Card card = null;
 
         for (int i = 0; i < myCards.size() ; i++) {
             if(myCards.get(i).equals(discardedCards.get(discardedCards.size()-1))){
-                return myCards.get(i);
+                card = myCards.get(i);
+                break;
             }
             if(myCards.get(i).getNumber().equals(Value.JACK)){
-                jokerIndex = i;
+                card = myCards.get(i);
             }
         }
 
-       if(jokerIndex != 99){
-            return myCards.get(jokerIndex);
-        }
-        System.out.println(getIndex() + "= " +myCards.size());
-        return myCards.get(GameState.random.nextInt(myCards.size()));
+        card = card != null ?  card : myCards.get(GameState.random.nextInt(myCards.size()));
+
+        logger.debug(gameState.getGameName() + " " + "Player " + getIndex() + " played " + card);
+
+        return card;
     }
 }

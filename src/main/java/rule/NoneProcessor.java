@@ -1,17 +1,13 @@
-package rule.end;
+package rule;
 
 import model.Card;
 import rule.PointChain;
 import model.Player;
 
-// TODO give all of them last player
-public class NoAviableCardProcessor implements PointChain {
-
-    private PointChain pointChain;
-
+public class NoneProcessor implements PointChain {
     @Override
     public void setNext(PointChain next) {
-        pointChain = next;
+
     }
 
     @Override

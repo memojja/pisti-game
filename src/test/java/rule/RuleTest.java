@@ -3,10 +3,6 @@ package rule;
 import model.*;
 import org.junit.Assert;
 import org.junit.Test;
-import rule.continously.AceProcessor;
-import rule.continously.ClubTwoProcessor;
-import rule.continously.DiamondTenProcessor;
-import rule.continously.NoneProcessor;
 
 public class RuleTest {
 
@@ -20,7 +16,7 @@ public class RuleTest {
         c2.setNext(c3);
         c3.setNext(c4);
 
-        Player player = new Smartbot(1);
+        Player player = new Smartbot(1,"test-game");
         c1.process(new Card(Suit.CLUB,Value.TWO),player);
 
         Assert.assertEquals(player.getPoint(),2);

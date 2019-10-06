@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-import java.util.function.Consumer;
 import java.util.stream.IntStream;
 
 public class GameState {
@@ -12,14 +11,14 @@ public class GameState {
     private Deck deck;
     private List<List<Card>> playersCards;
     private List<Card> discardedCards;
-    private int collectedCardIndex = 3;
-    private int turn;
+    private int collectedCardIndex = 0;
     private int giveCardCount = 0;
-    private int lastCollectDiscardedCardUserIndex=0;
+    private int turn;
+    private String gameName;
 
     public static final Random random = new Random(System.currentTimeMillis());
 
-    public GameState(){
+    public GameState(String gameName){
         deck = new Deck();
         playersCards = new ArrayList<>(4);
         discardedCards = new ArrayList<>(52);
@@ -27,6 +26,7 @@ public class GameState {
 
         fillDiscardedCardWithFacingUpCards();
         giveFourCardAllOfPlayer();
+        this.gameName = gameName;
     }
 
     public void giveFourCardAllOfPlayer(){
@@ -59,14 +59,6 @@ public class GameState {
         return giveCardCount;
     }
 
-    public int getLastCollectDiscardedCardUserIndex() {
-        return lastCollectDiscardedCardUserIndex;
-    }
-
-    public void setLastCollectDiscardedCardUserIndex(int lastCollectDiscardedCardUserIndex) {
-        this.lastCollectDiscardedCardUserIndex = lastCollectDiscardedCardUserIndex;
-    }
-
     public List<List<Card>> getPlayersCards() {
         return playersCards;
     }
@@ -77,6 +69,10 @@ public class GameState {
 
     public int getTurn() {
         return turn;
+    }
+
+    public String getGameName() {
+        return gameName;
     }
 
     private void fillDiscardedCardWithFacingUpCards() {

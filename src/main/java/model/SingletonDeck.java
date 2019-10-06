@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- * Singleton class for a deck of cards.
+ * Singleton class for a deck of cards to reduce memory allocation.
  */
 public class SingletonDeck {
 

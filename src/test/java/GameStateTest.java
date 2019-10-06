@@ -11,7 +11,7 @@ public class GameStateTest {
 
     @BeforeClass
     public static void  init(){
-        gameState = new GameState();
+        gameState = new GameState("test_game");
     }
 
     @Test
