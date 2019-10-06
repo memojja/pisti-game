@@ -16,7 +16,7 @@ public class RuleTest {
         c2.setNext(c3);
         c3.setNext(c4);
 
-        Player player = new Smartbot(1,"test-game");
+        Player player = new SmartBot(1,"test-game");
         c1.process(new Card(Suit.CLUB,Value.TWO),player);
 
         Assert.assertEquals(player.getPoint(),2);

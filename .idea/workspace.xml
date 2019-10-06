@@ -2,25 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8217ed6f-4fe7-4b7d-8e0b-11ed8041f94f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Dummybot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dummybot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Smartbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Smartbot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/continously/AceProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/AceProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/continously/ClubTwoProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/ClubTwoProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/continously/DiamondTenProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/DiamondTenProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/continously/JokerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/JokerProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/continously/NoneProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/NoneProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/end/MajorityProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/end/NoAviableCardProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/GameImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/GenericCardUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GenericCardUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameStateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Dummybot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DummyBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Smartbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SmartBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bot/PlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rule/RuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rule/RuleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,11 +38,11 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/GameService.java">
+      <file leaf-file-name="DummyBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/DummyBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+            <state relative-caret-position="294">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,35 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
+      <file leaf-file-name="SmartBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/SmartBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding>
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrainTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/BrainTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dummybot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Dummybot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="378">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,82 +62,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Smartbot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Smartbot.java">
+      <file leaf-file-name="SmartBotTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding>
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/GameState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="231">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#2204#2205#0" expanded="true" />
-                <element signature="e#2235#2236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Deck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Deck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingletonDeck.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/SingletonDeck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardWithFacingUp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/CardWithFacingUp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding>
-                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#181#182#0" expanded="true" />
                 <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,8 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>System.o</find>
-      <find>aaaaaaaaaaaa</find>
       <find>aaaaaaaaaaaa3</find>
       <find>, Player player</find>
       <find>System.out.prin</find>
@@ -222,6 +129,8 @@
       <find>final static Log</find>
       <find>final static</find>
       <find>setLastCollectDiscardedCardUserIndex</find>
+      <find>findFirst</find>
+      <find>myCards                 .parallelStream()                 .filter(mycard -&gt; discardedCards.parallelStream().anyMatch(mycard::equals))                 .findFirst();</find>
     </findStrings>
     <replaceStrings>
       <replace>public void process(List&lt;Card&gt; cards, Player player</replace>
@@ -236,10 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/GameState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rule/RuleChain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rule/JokerProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rule/AceProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/end/ClubTwoProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/ScoreUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/end/DiamondTenProcessor.java" />
@@ -257,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Card.java" />
         <option value="$PROJECT_DIR$/src/test/java/model/CardTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AITest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/end/PistiProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/end/PistiUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/PistiUtility.java" />
@@ -271,8 +175,6 @@
         <option value="$PROJECT_DIR$/src/main/java/util/GameUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameStateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Smartbot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Dummybot.java" />
         <option value="$PROJECT_DIR$/src/test/java/rule/RuleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/continously/DiamondTenProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/continously/JokerProcessor.java" />
@@ -284,9 +186,16 @@
         <option value="$PROJECT_DIR$/src/main/java/simulation/GameImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/simulation/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/GameService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/GameState.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Deck.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Dummybot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Smartbot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/GameState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/DummyBot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/SmartBot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java" />
       </list>
     </option>
   </component>
@@ -318,7 +227,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="440" />
+    <option name="x" value="580" />
     <option name="y" value="-12" />
     <option name="width" value="2298" />
     <option name="height" value="984" />
@@ -360,16 +269,7 @@
               <item name="p-game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p-game" type="b2602c69:ProjectViewProjectNode" />
@@ -390,15 +290,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p-game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rule" type="462c0819:PsiDirectoryNode" />
+              <item name="bot" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -445,7 +337,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.DummyBotTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="p-game" />
@@ -454,14 +346,20 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AITest.test_cosfdgdfgfdg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DummyBotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="p-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AITest" />
-      <option name="METHOD_NAME" value="test_cosfdgdfgfdg" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="bot" />
+      <option name="MAIN_CLASS_NAME" value="bot.DummyBotTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -492,8 +390,8 @@
       <module name="p-game" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="PACKAGE_NAME" value="bot" />
+      <option name="MAIN_CLASS_NAME" value="bot.PlayerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -509,8 +407,8 @@
       <module name="p-game" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTest" />
+      <option name="PACKAGE_NAME" value="bot" />
+      <option name="MAIN_CLASS_NAME" value="bot.PlayerTest" />
       <option name="METHOD_NAME" value="dddd" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -561,19 +459,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.AITest.test_cosfdgdfgfdg" />
       <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.PlayerTest.dddd" />
       <item itemvalue="JUnit.GameStateTest" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.DummyBotTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DummyBotTest" />
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameStateTest" />
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.PlayerTest.dddd" />
-        <item itemvalue="JUnit.AITest.test_cosfdgdfgfdg" />
       </list>
     </recent_temporary>
   </component>
@@ -589,44 +487,44 @@
       <updated>1570203992472</updated>
       <workItem from="1570203997522" duration="11421000" />
       <workItem from="1570256114585" duration="53822000" />
-      <workItem from="1570365392997" duration="6727000" />
+      <workItem from="1570365392997" duration="14193000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerTest - 2019.10.06 at 00h 29m 51s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 46m 56s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest - 2019.10.06 at 00h 30m 45s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 47m 12s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest - 2019.10.06 at 00h 31m 02s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 48m 21s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest - 2019.10.06 at 00h 33m 40s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 49m 09s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PlayerTest - 2019.10.06 at 01h 27m 58s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 49m 12s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameStateTest - 2019.10.06 at 01h 28m 29s.xml">
-      <configuration name="GameStateTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 49m 40s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameStateTest - 2019.10.06 at 02h 19m 37s.xml">
-      <configuration name="GameStateTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 51m 23s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameStateTest - 2019.10.06 at 03h 16m 06s.xml">
-      <configuration name="GameStateTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 51m 31s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameStateTest - 2019.10.06 at 03h 16m 09s.xml">
-      <configuration name="GameStateTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 51m 33s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameStateTest - 2019.10.06 at 03h 16m 12s.xml">
-      <configuration name="GameStateTest" configurationId="JUnit" />
+    <history-entry file="DummyBotTest - 2019.10.06 at 21h 51m 35s.xml">
+      <configuration name="DummyBotTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71970000" />
+    <option name="totallyTimeSpent" value="79436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -643,7 +541,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002667" side_tool="true" weight="0.2982273" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32952496" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32906666" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info id="Capture Tool" order="2" />
@@ -660,7 +558,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" sideWeight="0.5002667" side_tool="true" weight="0.2982273" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32896304" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973333" weight="0.68925965" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973333" weight="0.3920751" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.5050667" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.55683005" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20693333" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.53890824" />
@@ -671,7 +570,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.5056" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.249549" />
     </layout>
   </component>
@@ -697,8 +595,8 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/PlayerTest.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/test/java/bot/PlayerTest.java</url>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -714,11 +612,17 @@
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="46" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -799,8 +703,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/DeckOfCards.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Deck.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -877,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/model/CardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Value.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -895,16 +787,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/PistiUtility.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/stream/IntPipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -946,13 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -978,48 +853,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameStateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rule/RuleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rule/end/NoAviableCardProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1084,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/GenericCardUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/simulation/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1110,47 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simulation/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/GameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2235#2236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1160,34 +951,6 @@
             <element signature="e#489#490#0" expanded="true" />
             <element signature="e#596#597#0" expanded="true" />
             <element signature="e#623#624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Smartbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/BrainTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Dummybot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1225,6 +988,162 @@
           <caret line="7" column="67" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/GenericCardUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simulation/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/GameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameStateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rule/RuleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/model/CardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bot/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/BrainTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/DummyBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="32" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/SmartBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
           </folding>
         </state>
       </provider>

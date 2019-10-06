@@ -4,11 +4,11 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
-public class Dummybot extends Player {
+public class DummyBot extends Player {
 
-    private final static Logger logger = Logger.getLogger(String.valueOf(Dummybot.class));
+    private final static Logger logger = Logger.getLogger(String.valueOf(DummyBot.class));
 
-    public Dummybot(int index,String gameName) {
+    public DummyBot(int index, String gameName) {
         super(index,gameName);
     }
 
@@ -18,20 +18,18 @@ public class Dummybot extends Player {
         List<Card> myCards = gameState.getPlayersCards().get(getIndex());
         Card card = null;
 
-        for (int i = 0; i < myCards.size() ; i++) {
-            if(myCards.get(i).equals(discardedCards.get(discardedCards.size()-1))){
-                card = myCards.get(i);
+        for (Card myCard : myCards) {
+            if (myCard.equals(discardedCards.get(discardedCards.size() - 1))) {
+                card = myCard;
                 break;
             }
-            if(myCards.get(i).getNumber().equals(Value.JACK)){
-                card = myCards.get(i);
+            if (myCard.getNumber().equals(Value.JACK)) {
+                card = myCard;
             }
         }
 
         card = card != null ?  card : myCards.get(GameState.random.nextInt(myCards.size()));
-
         logger.debug(gameState.getGameName() + " " + "Player " + getIndex() + " played " + card);
-
         return card;
     }
 }
