@@ -6,7 +6,7 @@ public class Smartbot extends Player {
     }
 
     @Override
-    public Card logic() {
+    public Card logic(GameState gameState) {
         return null;
     }
 }

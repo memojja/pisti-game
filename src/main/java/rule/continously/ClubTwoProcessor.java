@@ -19,7 +19,7 @@ public class ClubTwoProcessor implements PointChain {
     public void process(Card card, Player player) {
         if(card.getNumber().equals(Value.TWO) && card.getSuit().equals(Suit.CLUB)){
             player.addPoint(2);
-        }else {
+        }else{
             nextInChain.process(card,player);
         }
     }

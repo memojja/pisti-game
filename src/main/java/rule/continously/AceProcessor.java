@@ -18,7 +18,7 @@ public class AceProcessor implements PointChain {
     public void process(Card card, Player player) {
         if(card.getNumber().equals(Value.ACE)){
             player.addPoint(1);
-        }else {
+        }else{
             nextInChain.process(card,player);
         }
     }

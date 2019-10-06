@@ -20,7 +20,7 @@ public class DiamondTenProcessor implements PointChain {
     public void process(Card card, Player player) {
         if(card.getNumber().equals(Value.TEN) && card.getSuit().equals(Suit.DIAMOND)){
             player.addPoint(3);
-        }else {
+        }else{
             nextInChain.process(card,player);
         }
     }

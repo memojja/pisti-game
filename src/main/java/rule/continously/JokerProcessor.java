@@ -7,19 +7,19 @@ import model.Player;
 
 public class JokerProcessor implements PointChain {
 
-    private PointChain nextChain;
+    private PointChain nextInChain;
 
     @Override
     public void setNext(PointChain next) {
-        nextChain = next;
+        nextInChain = next;
     }
 
     @Override
     public void process(Card card, Player player) {
         if (card.getNumber().equals(Value.JACK)){
             player.addPoint(1);
-        }else {
-            nextChain.process(card,player);
+        }else{
+            nextInChain.process(card,player);
         }
     }
 }

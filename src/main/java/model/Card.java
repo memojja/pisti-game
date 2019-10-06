@@ -52,7 +52,7 @@ public class Card {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null) return false;
         Card card = (Card) o;
         return value == card.value &&
                 suit == card.suit;
