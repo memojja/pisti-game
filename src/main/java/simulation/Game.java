@@ -1,9 +1,6 @@
 package simulation;
 
-import model.Card;
-import model.DummyBot;
-import model.GameState;
-import model.Player;
+import model.*;
 import org.apache.log4j.Logger;
 import service.GameService;
 
@@ -27,7 +24,8 @@ public class Game implements Runnable {
         players = new Player[4];
         IntStream.range(0,4)
                 .forEach(i -> {
-                   players[i] = new DummyBot(i,gameName);
+                    if(i == 1) players[i] = new SmartBot(i,gameName);
+                    else  players[i] = new DummyBot(i,gameName);
                 });
         gameState = new GameState(gameName);
         gameService = new GameService();
