@@ -10,10 +10,12 @@ import java.util.List;
 public class SmartBotTest {
 
     private static GameState gameState;
+    private static PlayerFactory playerFactory;
 
     @BeforeClass
     public static void init(){
         gameState = new GameState("Test-");
+        playerFactory = new PlayerFactory();
         List<Card> discardedCards = gameState.getDiscardedCards();
         List<Card> myCard = gameState.getPlayersCards().get(1);
 
@@ -48,7 +50,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = new SmartBot(1,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
 
         Assert.assertEquals(card1,smartBot.logic(gameState));
     }
@@ -64,7 +66,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = new SmartBot(1,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
 
         Assert.assertEquals(card1,smartBot.logic(gameState));
     }
@@ -81,7 +83,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = new SmartBot(1,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
 
         Assert.assertEquals(Value.JACK,smartBot.logic(gameState).getNumber());
     }

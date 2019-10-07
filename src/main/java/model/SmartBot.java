@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SmartBot extends Player {
 
-    private final static Logger logger = Logger.getLogger(String.valueOf(SmartBot.class));
+  private final static Logger logger = Logger.getLogger(String.valueOf(SmartBot.class));
 
     public SmartBot(int index, String gameName) {
         super(index,gameName);

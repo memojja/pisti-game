@@ -16,16 +16,18 @@ public class Game implements Runnable {
     private GameService gameService;
     private int userActionCount = 0;
     private int count=0;
+    private PlayerFactory playerFactory;
 
     private final static Logger logger = Logger.getLogger(String.valueOf(Game.class));
 
     public Game(){
         gameName = UUID.randomUUID().toString();
         players = new Player[4];
+        playerFactory = new PlayerFactory();
         IntStream.range(0,4)
                 .forEach(i -> {
-                    if(i == 1) players[i] = new SmartBot(i,gameName);
-                    else  players[i] = new DummyBot(i,gameName);
+                    if(i == 1) players[i] = playerFactory.getPlayer(PlayerEnum.SMART_BOT,i,gameName);
+                    else  players[i] = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,i,gameName);
                 });
         gameState = new GameState(gameName);
         gameService = new GameService();
