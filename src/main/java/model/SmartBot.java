@@ -18,7 +18,7 @@ public class SmartBot extends Player {
         List<Card> myCards = gameState.getPlayersCards().get(getIndex());
         Card card = null;
         for (Card myCard : myCards) {
-            if (myCard.equals(discardedCards.get(discardedCards.size() - 1))) {
+            if (myCard.getNumber().equals(discardedCards.get(discardedCards.size() - 1).getNumber())) {
                 card = myCard;
                 break;
             }
@@ -27,6 +27,7 @@ public class SmartBot extends Player {
             }
         }
         //send logical card if there is a discarded card if not send random.
+
         card = getCardIfPlayerHasDiscardedCard(discardedCards, myCards, card);
 
         logger.debug(gameState.getGameName() + " " + "Player " + getIndex() + " played " + card);
@@ -45,7 +46,8 @@ public class SmartBot extends Player {
                 }
             }
         }
-       return card != null ? card : myCards.get(GameState.random.nextInt(myCards.size()));
+      card = card != null ?  card : myCards.get(GameState.random.nextInt(myCards.size()));
+      return card;
     }
 
 }

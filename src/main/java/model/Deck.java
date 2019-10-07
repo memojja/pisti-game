@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Random;
 import util.GenericCardUtil;
 
 import java.util.Collections;
@@ -16,12 +18,14 @@ public class Deck implements Iterator<Card> {
     private int iteratorPosition = 0;
 
     // all games can be use same deck to reduce memory allocation
-    private static List<Card> cards;
+    private List<Card> cards;
 
     public Deck(){
-        cards = SingletonDeck.getDeck().getCards();
+        cards = new ArrayList<>(53);
+        List<Card> singletonDeck = SingletonDeck.getDeck().getCards();
+        singletonDeck.stream()
+            .forEach(card -> cards.add(card));
         shuffle();
-        System.out.println(cards);
     }
 
     public boolean hasNext() {
@@ -37,4 +41,7 @@ public class Deck implements Iterator<Card> {
         iteratorPosition = 0;
     }
 
+    public List<Card> getCards() {
+        return cards;
+    }
 }

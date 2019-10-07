@@ -1,5 +1,6 @@
 package simulation;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import model.*;
 import org.apache.log4j.Logger;
 import service.GameService;
@@ -14,7 +15,6 @@ public class Game implements Runnable {
     private Player[] players;
     private GameState gameState;
     private GameService gameService;
-    private int userActionCount = 0;
     private int count=0;
     private PlayerFactory playerFactory;
 
@@ -31,6 +31,7 @@ public class Game implements Runnable {
                 });
         gameState = new GameState(gameName);
         gameService = new GameService();
+
     }
 
     @Override
@@ -46,16 +47,18 @@ public class Game implements Runnable {
         logger.debug(gameName + " cards on the table : " + discardedCards);
 
         while (!gameState.isFinished()){
-            userActionCount++;
+
+            if(isPlayersNoHaveCard()){
+                gameState.giveFourCardAllOfPlayer();
+                gameState.setUserActionCount(0);
+            }
+
+
 
             int turn = gameState.getTurn();
             Player player = players[turn];
-
             player.play(gameState);
-            if(isPlayersNoHaveCard()){
-                gameState.giveFourCardAllOfPlayer();
-                userActionCount = 0;
-            }
+
 
             gameState.incrementTurn();
             count++;
@@ -74,7 +77,7 @@ public class Game implements Runnable {
     }
 
     private boolean isPlayersNoHaveCard() {
-        return userActionCount == 16 && gameState.getGiveCardCount() !=3;
+        return gameState.getUserActionCount() == 16 && gameState.getGiveCardCount() !=4;
     }
 
     private void calculateMajority(Player[] players) {

@@ -19,7 +19,7 @@ public class DummyBot extends Player {
         Card card = null;
 
         for (Card myCard : myCards) {
-            if (myCard.equals(discardedCards.get(discardedCards.size() - 1))) {
+            if (myCard.getNumber().equals(discardedCards.get(discardedCards.size() - 1).getNumber())) {
                 card = myCard;
                 break;
             }
@@ -28,7 +28,11 @@ public class DummyBot extends Player {
             }
         }
 
-        card = card != null ?  card : myCards.get(GameState.random.nextInt(myCards.size()));
+        try {
+            card = card != null ?  card : myCards.get(GameState.random.nextInt(myCards.size()));
+        }catch (IllegalArgumentException e){
+            logger.debug(gameState.getGameName() + " " + "Player " + getIndex() + " dont have card ",e);
+        }
         logger.debug(gameState.getGameName() + " " + "Player " + getIndex() + " played " + card);
         return card;
     }

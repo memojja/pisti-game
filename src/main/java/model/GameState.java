@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
+import org.apache.log4j.Logger;
 
 public class GameState {
 
@@ -14,14 +15,16 @@ public class GameState {
     private int collectedCardIndex = 0;
     private int giveCardCount = 0;
     private int turn;
+    private int userActionCount = 0;
     private String gameName;
 
+    private final static Logger logger = Logger.getLogger(String.valueOf(GameState.class));
     public static final Random random = new Random(System.currentTimeMillis());
 
     public GameState(String gameName){
         deck = new Deck();
         playersCards = new ArrayList<>(4);
-        discardedCards = new ArrayList<>(52);
+        discardedCards = new ArrayList<>(53);
         turn = random.nextInt(4);
 
         fillDiscardedCardWithFacingUpCards();
@@ -30,16 +33,22 @@ public class GameState {
     }
 
     public void giveFourCardAllOfPlayer(){
-        IntStream.range(0,4)
+        try {
+            IntStream.range(0,4)
                 .forEach(i-> {
                     IntStream.range(0,4).forEach(j->{
                         playersCards.get(i).add(deck.next());
                     });
                 });
-        giveCardCount++;
+            giveCardCount++;
+        }catch (IndexOutOfBoundsException e){
+            logger.debug("IndexOutOfBoundsException" + giveCardCount,e);
+        }
+
     }
 
     public void incrementTurn(){
+        userActionCount++;
         turn = turn == 3 ? 0 : ++turn;
     }
 
@@ -80,6 +89,14 @@ public class GameState {
             playersCards.add(new LinkedList<>());
             discardedCards.add(new CardWithFacingUp(deck.next()));
         });
+    }
+
+    public int getUserActionCount() {
+        return userActionCount;
+    }
+
+    public void setUserActionCount(int userActionCount) {
+        this.userActionCount = userActionCount;
     }
 
     private boolean dontHavePlayersCard() {

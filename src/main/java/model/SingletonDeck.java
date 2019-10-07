@@ -15,7 +15,7 @@ public class SingletonDeck {
 
 
     private SingletonDeck(){
-        cards = new ArrayList<>(52);
+        cards = new ArrayList<>(53);
         fillDeck();
     }
 

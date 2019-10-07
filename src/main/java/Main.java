@@ -2,9 +2,15 @@ import simulation.Game;
 
 public class Main {
     public static void main(String[] args) {
-        Game game = new Game();
-        Game game2 = new Game();
-        Game game3 = new Game();
-        new Thread(game).start();
+        int N = Integer.parseInt(args[0]);
+        int K = Integer.parseInt(args[1]);
+
+            for (int j = 0; j < K; j++) {
+                new Thread(new Game()).start();
+
+            }
+
+
+
     }
 }

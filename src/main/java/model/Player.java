@@ -71,4 +71,14 @@ public abstract class Player implements BrainTemplate {
         myCards.remove(card);
     }
 
+    @Override
+    public String toString() {
+        return "Player{" +
+            "index=" + index +
+            ", point=" + point +
+            ", sizeCollectedCard=" + sizeCollectedCard +
+            ", gameName='" + gameName + '\'' +
+            ", gameService=" + gameService +
+            '}';
+    }
 }

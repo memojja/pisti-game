@@ -23,8 +23,8 @@ public class SmartBotTest {
         discardedCards.clear();
         myCard.clear();
 
-        Card card = new CardWithFacingUp(new Card(Suit.CLUB,Value.TWO));
-        Card card1 = new CardWithFacingUp(new Card(Suit.DIAMOND,Value.JACK));
+        Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.TWO));
+        Card card1 = new CardWithFacingUp(new Card(Suit.SPADES,Value.ACE));
         Card card2 = new CardWithFacingUp(new Card(Suit.SPADES,Value.ACE));
         discardedCards.add(card);
         discardedCards.add(card1);
@@ -32,7 +32,7 @@ public class SmartBotTest {
 
         Card card4 = new Card(Suit.CLUB,Value.FIVE);
         Card card5 = new Card(Suit.CLUB,Value.SEVEN);
-        Card card6 = new Card(Suit.CLUB,Value.JACK);
+        Card card6 = new Card(Suit.CLUB,Value.EIGHT);
         myCard.add(card4);
         myCard.add(card5);
         myCard.add(card6);
@@ -42,7 +42,7 @@ public class SmartBotTest {
     @Test
     public void must_be_return_discarded_card() {
         Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.ACE));
-        Card card1 = new Card(Suit.DIAMOND,Value.JACK);
+        Card card1 = new Card(Suit.SPADES,Value.TWO);
 
         List<Card> discardedCards = gameState.getDiscardedCards();
         List<Card> myCard = gameState.getPlayersCards().get(1);
@@ -50,7 +50,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.SMART_BOT,1,"test");
 
         Assert.assertEquals(card1,smartBot.logic(gameState));
     }
@@ -66,7 +66,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.SMART_BOT,1,"test");
 
         Assert.assertEquals(card1,smartBot.logic(gameState));
     }
@@ -74,8 +74,8 @@ public class SmartBotTest {
 
     @Test
     public void must_be_return_joker_card() {
-        Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.FIVE));
-        Card card1 = new Card(Suit.SPADES,Value.TWO);
+        Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.QUEEN));
+        Card card1 = new Card(Suit.SPADES,Value.JACK);
 
         List<Card> discardedCards = gameState.getDiscardedCards();
         List<Card> myCard = gameState.getPlayersCards().get(1);
@@ -83,7 +83,7 @@ public class SmartBotTest {
         discardedCards.add(card);
         myCard.add(card1);
 
-        Player smartBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
+        Player smartBot = playerFactory.getPlayer(PlayerEnum.SMART_BOT,1,"test");
 
         Assert.assertEquals(Value.JACK,smartBot.logic(gameState).getNumber());
     }

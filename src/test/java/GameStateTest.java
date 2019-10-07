@@ -19,8 +19,9 @@ public class GameStateTest {
         Assert.assertEquals(gameState.getPlayersCards().size(),4);
     }
 
+
     @Test
-    public void card_size_on_initial_hand_of_users_must_be_four(){
+    public void given_card_when_initialize_then_user_must_have_four_cards(){
         IntStream.range(0,4).forEach(i -> Assert.assertEquals(gameState.getPlayersCards().get(i).size(),4));
     }
 

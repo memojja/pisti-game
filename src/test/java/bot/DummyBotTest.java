@@ -57,18 +57,19 @@ public class DummyBotTest {
 
     @Test
     public void must_be_return_joker_card() {
-        Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.FIVE));
-        Card card1 = new Card(Suit.SPADES,Value.TWO);
+        Card card = new CardWithFacingUp(new Card(Suit.SPADES,Value.KING));
+        Card card1 = new Card(Suit.SPADES,Value.JACK);
 
         List<Card> discardedCards = gameState.getDiscardedCards();
         List<Card> myCard = gameState.getPlayersCards().get(0);
+
 
         discardedCards.add(card);
         myCard.add(card1);
 
         Player dummyBot = playerFactory.getPlayer(PlayerEnum.DUMMY_BOT,0,"test");
 
-        Assert.assertEquals(myCard.get(2),dummyBot.logic(gameState));
+        Assert.assertEquals(Value.JACK,dummyBot.logic(gameState).getNumber());
     }
 
 }
