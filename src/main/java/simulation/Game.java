@@ -77,7 +77,7 @@ public class Game implements Runnable {
         logger.debug(gameName + " game count : " + count);
 
         System.out.println("Game Id : " +gameName);
-        IntStream.range(0,4).forEach(i -> System.out.println("Player "+ i + " " + players[i].getPoint()));
+        IntStream.range(0,4).forEach(i -> System.out.println("Player-"+ i + " has " + players[i].getPoint() + " pts"));
 
     }
 

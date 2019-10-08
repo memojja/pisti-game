@@ -17,10 +17,10 @@ java -jar target/service-1.0-SNAPSHOT.jar 1
 
 ````
 Game Id : bb997c3c-82a0-4178-9510-0bb635f47810
-Player 0 11
-Player 1 3
-Player 2 0
-Player 3 2
+Player-0 has 11 pts
+Player-1 has 1 pts
+Player-2 has 0 pts
+Player-3 has 4 pts
 ````
 
 if you want see the output of each turn, like which user scored or which card has been played) you should set `log4j.rootLoggerparameter` to `debug`
