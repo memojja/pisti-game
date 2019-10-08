@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8217ed6f-4fe7-4b7d-8e0b-11ed8041f94f" name="Default" comment="general refactoring">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/BrainTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BrainTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/CardWithFacingUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/CardWithFacingUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DummyBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/DummyBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PistiType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PistiType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PlayerEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PlayerEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PlayerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/PlayerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/SmartBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/SmartBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/AceProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/AceProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/ClubTwoProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/ClubTwoProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/DiamondTenProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/DiamondTenProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/JokerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/JokerProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/NoneProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/NoneProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rule/PointChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/PointChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/GenericCardUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GenericCardConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameStateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bot/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bot/DeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bot/DummyBotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bot/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bot/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bot/SmartBotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rule/RuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rule/RuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,12 +80,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="202">
-                <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <first_editor relative-caret-position="445">
+                <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               </first_editor>
               <second_editor />
             </state>
@@ -168,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
@@ -283,8 +251,8 @@
         <option value="$PROJECT_DIR$/src/main/java/model/PlayerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -380,7 +348,7 @@
     <property name="SearchEverywhereHistoryKey" value="Ace&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/rule/continously/AceProcessor.java&#10;Dummybot&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/model/Dummybot.java&#10;Player&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/model/Player.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570519759863" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570519893119" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/dev/projects/cpass/notification_broker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -532,7 +500,7 @@
       <workItem from="1570203997522" duration="11421000" />
       <workItem from="1570256114585" duration="53822000" />
       <workItem from="1570365392997" duration="18570000" />
-      <workItem from="1570424998297" duration="35533000" />
+      <workItem from="1570424998297" duration="35663000" />
     </task>
     <task id="LOCAL-00001" summary="general refactoring">
       <created>1570456440490</created>
@@ -577,7 +545,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119346000" />
+    <option name="totallyTimeSpent" value="119476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +577,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32896304" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.2749591" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" weight="0.61865795" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.7659575" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32502595" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -1148,16 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="202">
-            <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1213,6 +1171,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="445">
+            <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
