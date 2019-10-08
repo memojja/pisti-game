@@ -2,6 +2,10 @@ package model;
 
 import java.util.stream.Stream;
 
+/**
+ *
+ * A simple enum
+ */
 public enum Suit {
     SPADES(0),DIAMOND(1),CLUB(2),HEARTS(3);
 

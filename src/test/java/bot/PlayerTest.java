@@ -22,7 +22,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void discard_card_test(){
+    public void given_resemble_cards_when_discarded_card_aviable_then_user_must_discard_joker_card(){
         myCards.add(new Card(Suit.HEARTS,Value.QUEEN));
 
         Optional<Card> card = myCards

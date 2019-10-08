@@ -7,7 +7,7 @@ import org.junit.Test;
 public class RuleTest {
 
     @Test
-    public void ace_one_point(){
+    public void given_point_when_two_ace_and_club_two_card_then_point_must_be_four(){
         PointChain c1 = new AceProcessor();
         PointChain c2 = new ClubTwoProcessor();
         PointChain c3 = new DiamondTenProcessor();

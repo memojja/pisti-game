@@ -8,7 +8,7 @@ import org.junit.Test;
 public class DeckTest {
 
   @Test
-  public void deck_test(){
+  public void when_shuffle_cards_all_games_decks_must_be_different(){
     Deck deck = new Deck();
     Deck deck1 = new Deck();
     Deck deck2 = new Deck();

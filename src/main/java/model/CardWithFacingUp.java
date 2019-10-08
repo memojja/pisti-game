@@ -1,5 +1,9 @@
 package model;
 
+/**
+ *
+ * Card that default face is face up
+ */
 public class CardWithFacingUp extends Card {
     public CardWithFacingUp(Card card) {
         super(card,true);

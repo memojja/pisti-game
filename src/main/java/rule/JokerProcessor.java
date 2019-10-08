@@ -5,6 +5,10 @@ import model.Value;
 import org.apache.log4j.Logger;
 import model.Player;
 
+/**
+ *
+ * If given card equals joker increase point,otherwise process next chain
+ */
 public class JokerProcessor implements PointChain {
     private final static Logger logger = Logger.getLogger(String.valueOf(JokerProcessor.class));
 

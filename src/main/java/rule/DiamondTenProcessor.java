@@ -6,7 +6,10 @@ import model.Value;
 import org.apache.log4j.Logger;
 import model.Player;
 
-// TODO 3 point
+/**
+ *
+ * If given card equals diamond ten increase point,otherwise process next chain
+ */
 public class DiamondTenProcessor implements PointChain {
     private final static Logger logger = Logger.getLogger(String.valueOf(DiamondTenProcessor.class));
 

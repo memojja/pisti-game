@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.IntStream;
 
+/**
+ *
+ * Games run in different threads
+ */
 public class Game implements Runnable {
 
     private String gameName;
@@ -31,7 +35,6 @@ public class Game implements Runnable {
                 });
         gameState = new GameState(gameName);
         gameService = new GameService();
-
     }
 
     @Override
@@ -41,8 +44,11 @@ public class Game implements Runnable {
     }
 
 
+    /**
+     *  to start game
+     */
     private void play(){
-        List<Card> discardedCards = gameState.getDiscardedCards();
+        final List<Card> discardedCards = gameState.getDiscardedCards();
         logger.debug(gameName + " game is starting");
         logger.debug(gameName + " cards on the table : " + discardedCards);
 
@@ -53,10 +59,8 @@ public class Game implements Runnable {
                 gameState.setUserActionCount(0);
             }
 
-
-
-            int turn = gameState.getTurn();
-            Player player = players[turn];
+            final int turn = gameState.getTurn();
+            final Player player = players[turn];
             player.play(gameState);
 
 
@@ -72,19 +76,17 @@ public class Game implements Runnable {
         logger.debug(gameName + " game Collected Card Index : " + gameState.getCollectedCardIndex());
         logger.debug(gameName + " game count : " + count);
 
-        IntStream.range(0,4).forEach(i -> logger.debug(gameName + " Player "+ i + " " + players[i].getPoint()));
+        System.out.println("Game Id : " +gameName);
+        IntStream.range(0,4).forEach(i -> System.out.println("Player "+ i + " " + players[i].getPoint()));
 
     }
 
+    /**
+     * Players don't have card
+     * @return boolean
+     */
     private boolean isPlayersNoHaveCard() {
         return gameState.getUserActionCount() == 16 && gameState.getGiveCardCount() !=4;
     }
 
-    private void calculateMajority(Player[] players) {
-
-    }
-
-    public String getGameName() {
-        return gameName;
-    }
 }

@@ -16,18 +16,19 @@ public abstract class Player implements BrainTemplate {
     private String gameName;
     private GameService gameService;
 
-    public Player(int index,String gameName){
+    public Player(final int index,final String gameName){
         this.index = index;
         this.point = 0;
-        gameService = new GameService();
         this.gameName = gameName;
+        this.gameService = new GameService();
+
     }
 
-    public void play(GameState gameState) {
-        List<Card> myCards = gameState.getPlayersCards().get(index);
-        List<Card> discardedCards = gameState.getDiscardedCards();
+    public void play(final GameState gameState) {
+       final List<Card> myCards = gameState.getPlayersCards().get(index);
+       final List<Card> discardedCards = gameState.getDiscardedCards();
 
-        Card card = logic(gameState);
+       final Card card = logic(gameState);
 
         discardCard(myCards, discardedCards, card);
 

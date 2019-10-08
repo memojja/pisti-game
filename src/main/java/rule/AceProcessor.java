@@ -5,6 +5,10 @@ import model.Value;
 import org.apache.log4j.Logger;
 import model.Player;
 
+/**
+ *
+ * If given card equals ace increase point,otherwise process next chain
+ */
 public class AceProcessor implements PointChain {
 
     private PointChain nextInChain;

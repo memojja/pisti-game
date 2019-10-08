@@ -5,7 +5,7 @@ public enum  PistiType {
 
     private String type;
 
-    private PistiType(String type) {
+    PistiType(String type) {
         this.type = type;
     }
 

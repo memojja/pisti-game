@@ -2,6 +2,10 @@ package model;
 
 import java.util.Objects;
 
+/**
+ *
+ * Simple card that default face is face down
+ */
 public class Card {
 
     private Value value;

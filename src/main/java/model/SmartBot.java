@@ -4,6 +4,10 @@ import org.apache.log4j.Logger;
 
 import java.util.List;
 
+/**
+ *
+ * A bot that has smart logic
+ */
 public class SmartBot extends Player {
 
   private final static Logger logger = Logger.getLogger(String.valueOf(SmartBot.class));

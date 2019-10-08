@@ -6,7 +6,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
 import org.apache.log4j.Logger;
+import util.GenericCardConstant;
 
+/**
+ *
+ * A class that only uses game state
+ */
 public class GameState {
 
     private Deck deck;
@@ -24,7 +29,7 @@ public class GameState {
     public GameState(String gameName){
         deck = new Deck();
         playersCards = new ArrayList<>(4);
-        discardedCards = new ArrayList<>(53);
+        discardedCards = new ArrayList<>(GenericCardConstant.TOTAL_CARD);
         turn = random.nextInt(4);
 
         fillDiscardedCardWithFacingUpCards();
@@ -32,6 +37,10 @@ public class GameState {
         this.gameName = gameName;
     }
 
+    /**
+     * To give 4 cards to all players
+     *
+     */
     public void giveFourCardAllOfPlayer(){
         try {
             IntStream.range(0,4)
@@ -47,6 +56,10 @@ public class GameState {
 
     }
 
+    /**
+     *
+     * increment user turn
+     */
     public void incrementTurn(){
         userActionCount++;
         turn = turn == 3 ? 0 : ++turn;
@@ -84,13 +97,6 @@ public class GameState {
         return gameName;
     }
 
-    private void fillDiscardedCardWithFacingUpCards() {
-        IntStream.range(0,4).forEach(i -> {
-            playersCards.add(new LinkedList<>());
-            discardedCards.add(new CardWithFacingUp(deck.next()));
-        });
-    }
-
     public int getUserActionCount() {
         return userActionCount;
     }
@@ -99,6 +105,21 @@ public class GameState {
         this.userActionCount = userActionCount;
     }
 
+    /**
+     * fill discarded cards list with four facing up cards at have initialize
+     *
+     */
+    private void fillDiscardedCardWithFacingUpCards() {
+        IntStream.range(0,4).forEach(i -> {
+            playersCards.add(new LinkedList<>());
+            discardedCards.add(new CardWithFacingUp(deck.next()));
+        });
+    }
+
+    /**
+     * check if players have a card
+     * @return boolean
+     */
     private boolean dontHavePlayersCard() {
         return playersCards.get(0).size() == 0 &&
                 playersCards.get(1).size() == 0 &&
