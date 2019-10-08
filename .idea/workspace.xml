@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8217ed6f-4fe7-4b7d-8e0b-11ed8041f94f" name="Default" comment="general refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/simulation/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulation/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,12 +92,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
-                <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <first_editor relative-caret-position="112">
+                <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
               </first_editor>
               <second_editor />
             </state>
@@ -123,14 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -157,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>E</find>
       <find>new Card</find>
       <find>CardWithFacingUp</find>
       <find>ummyBot:37</find>
@@ -187,6 +182,7 @@
       <find>given_no_smart_card_when_discarded_card_aviable_then_user_must_discard_card</find>
       <find>three</find>
       <find>&quot;Player</find>
+      <find>N user count</find>
     </findStrings>
     <replaceStrings>
       <replace>public void process(List&lt;Card&gt; cards, Player player</replace>
@@ -248,10 +244,10 @@
         <option value="$PROJECT_DIR$/src/main/java/model/GameState.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/PlayerFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SingletonDeck.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/simulation/Game.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -347,7 +343,7 @@
     <property name="SearchEverywhereHistoryKey" value="Ace&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/rule/continously/AceProcessor.java&#10;Dummybot&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/model/Dummybot.java&#10;Player&#9;FILE&#9;file://C:/Users/memojja/Desktop/p-game/src/main/java/model/Player.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570520780660" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570521265786" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/dev/projects/cpass/notification_broker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -499,7 +495,7 @@
       <workItem from="1570203997522" duration="11421000" />
       <workItem from="1570256114585" duration="53822000" />
       <workItem from="1570365392997" duration="18570000" />
-      <workItem from="1570424998297" duration="36539000" />
+      <workItem from="1570424998297" duration="37021000" />
     </task>
     <task id="LOCAL-00001" summary="general refactoring">
       <created>1570456440490</created>
@@ -544,7 +540,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120352000" />
+    <option name="totallyTimeSpent" value="120834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,7 +567,7 @@
       <window_info anchor="bottom" id="SonarQube" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.53890824" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49973333" visible="true" weight="0.42880523" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973333" weight="0.42880523" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5826514" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1153,16 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/simulation/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1176,10 +1162,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <first_editor relative-caret-position="112">
+            <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

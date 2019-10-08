@@ -1,12 +1,10 @@
 import java.text.ParseException;
-import java.util.Arrays;
 import java.util.stream.IntStream;
 import simulation.Game;
 
 /**
  *
  * That class has main method to play pisti game
- *  N user count
  *  K game count
  */
 public class Main {
@@ -26,7 +24,7 @@ public class Main {
         try {
             K = Integer.parseInt(args[0]);
             if(K < 1){
-                throw new ParseException(" d",K);
+                throw new ParseException("cannot parse. stack trace : ",K);
             }
         }catch (NumberFormatException e){
             System.out.println("Please give me a valid number");
