@@ -4,7 +4,7 @@
 1 - mvn install
 java -jar target/service-1.0-SNAPSHOT.jar N
 
-N is game count that have to be bigger than 3
+N is game count
 ```
 
 #### a1.Input
